@@ -44,7 +44,7 @@ function WhyChooseUs() {
         />
         <div className="md:w-1/2 p-6 flex flex-col justify-center">
           {POINTS.map(({ title, description, iconUrl }) => (
-            <div key={title} className="mb-5 flex gap-6">
+            <div key={title} className="mb-6 flex gap-6">
               <div className="flex-shrink-0">
                 <Image
                   src={getImagePath(iconUrl)}
@@ -54,7 +54,7 @@ function WhyChooseUs() {
                 />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-yellow-500">
+                <h3 className="text-2xl font-semibold text-yellow-500">
                   {title}
                 </h3>
                 <p className="mt-1 text-lg">{description}</p>
