@@ -2,6 +2,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Landing from "@/components/Landing";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import { getImagePath } from "@/utils/common";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
     <div className="bg-slate-700 text-white">
       <header>
         <Image
-          src="/logo.jpg"
+          src={getImagePath("/logo.jpg")}
           alt="logo"
           width={100}
           height={100}

@@ -1,4 +1,4 @@
-import { DESCRIPTION, NAME, TAGLINE } from "@/utils/common";
+import { DESCRIPTION, getImagePath, NAME, TAGLINE } from "@/utils/common";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "@mantine/core";
@@ -9,7 +9,7 @@ function Landing() {
   return (
     <div className="relative h-[calc(100vh_/_1.5)]">
       <Image
-        src="/landing-img.jpg"
+        src={getImagePath("/landing-img.jpg")}
         alt="landing"
         width={1440}
         height={720}

@@ -1,3 +1,4 @@
+import { getImagePath } from "@/utils/common";
 import Image from "next/image";
 import React from "react";
 
@@ -33,7 +34,7 @@ function WhyChooseUs() {
       </h1>
       <div className="flex flex-col md:flex-row">
         <Image
-          src="/landing-img.jpg"
+          src={getImagePath("/landing-img.jpg")}
           alt="landing"
           objectFit="cover"
           objectPosition="center"
@@ -45,7 +46,12 @@ function WhyChooseUs() {
           {POINTS.map(({ title, description, iconUrl }) => (
             <div key={title} className="mb-5 flex gap-6">
               <div>
-                <Image src={iconUrl} alt={title} width={50} height={50} />
+                <Image
+                  src={getImagePath(iconUrl)}
+                  alt={title}
+                  width={50}
+                  height={50}
+                />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-yellow-500">
