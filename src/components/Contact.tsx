@@ -1,4 +1,4 @@
-import { getImagePath, MOBILE_NUMBER } from "@/utils/common";
+import { getImagePath, MOBILE_NUMBER, WHATSAPP_LINK } from "@/utils/common";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "@mantine/core";
@@ -46,13 +46,21 @@ function Contact() {
         ))}
       </div>
       <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-12">
-        <Button className="!bg-green-600 !h-12">
-          <FontAwesomeIcon icon={faWhatsapp} width={24} height={24} />
-          <span className="ml-1 tracking-wide">CONTACT US</span>
+        <Button
+          className="!bg-green-600 !h-12 tracking-wide"
+          component="a"
+          href={WHATSAPP_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          leftSection={
+            <FontAwesomeIcon icon={faWhatsapp} width={24} height={24} />
+          }
+        >
+          CONTACT US
         </Button>
         <div>
           <p className="font-semibold text-center">Or Call Us Now</p>
-          <p className="font-bold text-xl">{MOBILE_NUMBER}</p>
+          <p className="font-bold text-xl">+91 {MOBILE_NUMBER}</p>
         </div>
       </div>
     </div>

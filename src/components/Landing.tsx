@@ -1,4 +1,10 @@
-import { DESCRIPTION, getImagePath, NAME, TAGLINE } from "@/utils/common";
+import {
+  DESCRIPTION,
+  getImagePath,
+  NAME,
+  TAGLINE,
+  WHATSAPP_LINK,
+} from "@/utils/common";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "@mantine/core";
@@ -27,9 +33,17 @@ function Landing() {
             {DESCRIPTION}
           </p>
           <div>
-            <Button className="!bg-green-600 !h-12">
-              <FontAwesomeIcon icon={faWhatsapp} width={24} height={24} />
-              <span className="ml-1 tracking-wide">HIRE US NOW</span>
+            <Button
+              className="!bg-green-600 !h-12 tracking-wide"
+              component="a"
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              leftSection={
+                <FontAwesomeIcon icon={faWhatsapp} width={24} height={24} />
+              }
+            >
+              HIRE US NOW
             </Button>
           </div>
         </div>
