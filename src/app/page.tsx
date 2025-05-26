@@ -1,26 +1,19 @@
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Landing from "@/components/Landing";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import { getImagePath } from "@/utils/common";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-slate-700 text-white">
-      <header>
-        <Image
-          src={getImagePath("/logo.jpg")}
-          alt="logo"
-          width={100}
-          height={100}
-          className="m-auto"
-        />
-      </header>
-      <main className="flex flex-col gap-12">
+    <div className="bg-zinc-800">
+      <Header />
+      <main className="flex flex-col">
         <Landing />
-        <div className="max-w-screen-xl m-auto flex flex-col gap-12">
-          <WhyChooseUs />
+        <div className="flex flex-col">
+          <div className="p-6 md:p-12">
+            <WhyChooseUs />
+          </div>
           <Contact />
         </div>
       </main>

@@ -13,7 +13,7 @@ import React from "react";
 
 function Landing() {
   return (
-    <div className="relative h-[calc(100vh_/_1.5)]">
+    <div className="relative h-[calc(100vh_/_1.5)] text-white">
       <Image
         src={getImagePath("/landing-img.jpg")}
         alt="landing"
