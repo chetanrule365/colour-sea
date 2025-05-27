@@ -28,7 +28,7 @@ const POINTS: Array<{
 
 function WhyChooseUs() {
   return (
-    <div className="max-w-screen-xl m-auto text-white">
+    <div className="max-w-screen-xl m-auto">
       <h1 className="text-3xl font-bold tracking-wide text-center mb-6">
         Why Choose Us
       </h1>

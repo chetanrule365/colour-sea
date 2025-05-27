@@ -6,7 +6,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
-    <div className="bg-zinc-800">
+    <div className="">
       <Header />
       <main className="flex flex-col">
         <Landing />

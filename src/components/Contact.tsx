@@ -25,7 +25,7 @@ const POINTS: Array<{
 
 function Contact() {
   return (
-    <div className="flex flex-col items-center justify-center p-12 bg-black bg-opacity-30 text-white">
+    <div className="flex flex-col items-center justify-center p-12 bg-fuchsia-200">
       <h1 className="text-5xl font-semibold text-center">
         Book a Free Consultation
       </h1>

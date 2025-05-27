@@ -4,7 +4,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="p-12 text-white">
+    <footer className="p-12">
       <Image
         src={getImagePath("/logo-trans.png")}
         alt="logo"

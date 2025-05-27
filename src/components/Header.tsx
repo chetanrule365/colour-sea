@@ -16,7 +16,7 @@ function Header() {
         height={100}
       />
       <div className="items-center gap-6 hidden md:flex">
-        <div className="text-white font-semibold flex items-center gap-2">
+        <div className="font-semibold flex items-center gap-2">
           <FontAwesomeIcon icon={faPhone} width={18} />
           <p className="">Call Us: +91 {MOBILE_NUMBER}</p>
         </div>
